@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (cellDate === today.getDate().toString() && today.getFullYear() === today.getFullYear() && today.getMonth() === today.getMonth()) {
-            cell.style.backgroundColor = "#2b4875";
+            cell.style.backgroundColor = "#365c9646";
         }
     });
 });
