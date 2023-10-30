@@ -1,4 +1,4 @@
-# studyplanner--self
+# studyplanner-self
 기간 : 3일(새벽시간/1일 6시간 상당 소요)
 
 **1day** 
