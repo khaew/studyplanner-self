@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: flex;
+}
+
+.studyplanner-container{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 630px;
+    border:  1px solid #172f5246;
+    border-radius: 30px;
+}

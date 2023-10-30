@@ -1,0 +1,77 @@
+/* maincontainer.css (기존 스타일 내용 유지) */
+.todolist-main-container li {
+    list-style: none;
+    text-align: left;
+    display: flex; /* 아이템 내부 요소를 가로로 정렬 */
+    align-items: center; /* 요소를 수직 가운데 정렬 */
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #172f5246;
+    border-radius: 3px;
+    appearance: none; /* 기본 스타일 감춤 */
+    -webkit-appearance: none; /* 웹킷 기반 브라우저 지원 */
+}
+
+input[type="checkbox"]::before {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+
+}
+
+input[type="checkbox"]:checked::before {
+    background-color: #172f52ba; /* 체크된 경우 체크박스 배경색을 변경 */
+    border-radius: 2px;
+}
+
+.todolist-main-container li {
+    display: flex; /* 리스트 항목 내부 요소를 가로로 정렬 */
+    align-items: center; /* 리스트 항목을 수직 가운데 정렬 */
+}
+
+.todolist-main-container li button {
+    padding: 1px 5px 1px 5px;
+    background-color: white;
+    border: 1px solid #172f5246;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #172f5246;
+    cursor: pointer;
+    margin-left: auto; /* X 버튼을 오른쪽으로 이동 (자동 마진) */
+}
+
+.text-input {
+    margin: 30px 0px 0px 0px;
+    padding:3px 0px 3px 5px;
+    width: 95%;
+    border: 1px solid #172f5246;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.todolist-main-container {
+    padding-right: 3px;
+    padding-left: 0;
+    margin-left: 0px;
+    height: 200px;
+    overflow-y: scroll;
+    font-size: 15px;
+    color: #172f52b3;
+}
+
+.todolist-main-container::-webkit-scrollbar {
+    width: 3px;
+}
+
+.todolist-main-container::-webkit-scrollbar-thumb {
+    background-color: #172f5246;
+    border-radius: 3px;
+}

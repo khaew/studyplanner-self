@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>studyplanner</title>
+    <link rel="stylesheet" href="./css/todolist.css">
+    <link rel="stylesheet" href="./css/maincontainer.css">
+    <link rel="stylesheet" href="./css/monthly.css">
+</head>
+<body>
+    <div id="root">
+        <div class="studyplanner-container">
+            <div class="monthly-container">
+                <div class="monthly-page-container invisible">
+                    <div class="calendar">
+                        <div id="calendar">
+                            <div class="calendar-header">
+                                <span class="prev-month-button" onclick="showPrevMonth();">&lt;</span>
+                                <span class="current-month">Monthly</span>
+                                <span class="next-month-button" onclick="showNextMonth();">&gt;</span>
+                            </div>
+                            <div class="calendar-days">
+                                <div class="day">Sun</div>
+                                <div class="day">Mon</div>
+                                <div class="day">Tue</div>
+                                <div class="day">Wed</div>
+                                <div class="day">Thu</div>
+                                <div class="day">Fri</div>
+                                <div class="day">Sat</div>
+                            </div>
+                            <div class="calendar-grid" onclick="selectDate(event);"></div>
+                            <div class="todo-list-container">
+                                <header>
+                                    <div class="todolist-header-items">
+                                        <input type="text" class="text-input" 
+                                            placeholder="Write here :D" onkeyup="addTodoOnKeyUpHandle(event);">
+                                    </div>
+                                </header>
+                                <ol class="todolist-main-container"></ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/monthly.js"></script>
+    <script src="./js/todolist.js"></script>
+</body>
+</html>
